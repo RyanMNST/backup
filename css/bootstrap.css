@@ -6592,6 +6592,13 @@ button.close {
 	  text-indent: 20px;
 }
 
+.paragraphn {
+	  margin-top: 10px;
+	  font-family: Century Gothic;
+	  color: white;
+	  font-size: 15px;
+}
+
 .paragraphli {
 	  font-family: Century Gothic;
 	  color: white;
