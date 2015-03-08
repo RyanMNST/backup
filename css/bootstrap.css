@@ -1120,7 +1120,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: auto;
 }
 .img-rounded {
   border-radius: 6px;
@@ -6617,4 +6617,32 @@ button.close {
 	-moz-box-shadow: 0 0 10px #ccc; 
 	-webkit-box-shadow: 0 0 10px #ccc; 
 	box-shadow: 0 0 10px #ccc; 
+}
+
+.boxg { 
+	width: 250px; 
+	height: 250px;
+	padding: 0px; 
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boxg:hover { 
+	-moz-box-shadow: 0 0 10px #ccc; 
+	-webkit-box-shadow: 0 0 10px #ccc; 
+	box-shadow: 0 0 10px #ccc; 
+}
+
+ul {         
+padding:0 0 0 0;
+margin:0 0 0 0;
+}
+ul li {     
+list-style:none;
+margin-bottom:25px;           
+}
+ul li img {
+cursor: pointer;
 }

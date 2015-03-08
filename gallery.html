@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Flora-Louisiano: Panagbenga</title>
+			<meta charset="utf-8">
+			<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+			<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+			<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+			<script src="js/bootstrap.min.js"></script>
+			
+		</head>
+
+		<body>
+
+				<div class="container">
+					<h1 class="text-center" style="font-family: Century Gothic; font-size: 72px;"> Panagbenga </h1>
+					<br>
+				</div>
+				
+				<div class="container">
+				<div class="navbar">
+					<ul class="nav nav-justified">
+						<li><a href="index.html" type="button" class="btn btn-block btn-default">Home</a></li>	
+						<li><a href="gallery.html" type="button" class="btn btn-block btn-default">Gallery</a></li>	
+						<li><a href="bibliography.html" type="button" class="btn btn-block btn-default">Bibliography</a></li>	
+						<li><a href="about_us.html" type="button" class="btn btn-block btn-default">About Us</a></li>	
+						<li><a href="narrative.html" type="button" class="btn btn-block btn-default">Project Narrative</a></li>	
+						<li><a href="interview.html" type="button" class="btn btn-block btn-default">Interview</a></li>	
+					</ul>
+				</div>
+				</div>
+				
+				<div class="container">
+				<div class="jumbotron">
+				<div class="container">	
+					     <ul class="row">
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="css/bg.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/e1.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/e2.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/e3.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/e4.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/c1.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/c2.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/Events.png"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/History.jpg"></li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="img/Culture.jpg"></li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">         
+				  <div class="modal-body">                
+				  </div>
+				</div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+		
+		<script>
+       $(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        })
+		</script>
+			
+		</body>
+	</html>
